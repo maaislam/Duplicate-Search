@@ -1,0 +1,45 @@
+.block {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.duplicate-search {
+    width: 50%;
+
+    @media (max-width:1024px) {
+        margin: 0;
+    }
+
+    @media (max-width:768px) {
+        width: 100%;
+    }
+
+    input {
+        border: 1px solid #67e2d1;
+        border-right: 0;
+    }
+
+    .search-form {
+        button {
+            border: 1px solid #67e2d1;
+        }
+    }
+
+    .search-results {
+        left: 10%;
+        transform: translateX(-10%);
+
+        @media (max-width:1024px) {
+            left: 0;
+            transform: translateX(0);
+
+            a {
+                color: #000;
+            }
+        }
+    }
+}
